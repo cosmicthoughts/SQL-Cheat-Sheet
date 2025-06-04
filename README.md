@@ -10,22 +10,22 @@ SQL stands for Structured Query Language. It is a programming language used to s
 ## SQL Database
 ### Create Database
 Used to create a new SQL database with specified name
-```
+```sql
 CREATE DATABASE database_name;
 ```
 ### Drop Database
 Used to delete an existing SQL database.
-```
+```sql
 DROP DATABASE database_name;
 ```
 ### Backup Database
 Used to create full back up of an existing sql_database.
-```
+```sql
 BACKUP DATABASE database_name TO DISK = 'filepath';
 ```
 ### Backup Database with Differential
 Used to create a differential back up of an existing SQL database. It backs up only the data that has changed since the last full back up.
-```
+```sql
 BACKUP DATABASE database_name TO DISK = 'filepath' WITH DIFFERENTIAL;
 ```
 
@@ -52,62 +52,62 @@ AND, OR, NOT, ALL, ANY, BETWEEN, IN, EXISTS, LIKE, SOME
 SQL views are the virtual tables based on a result set of an SQL statement. It contains rows and columns similar to a real table
 ### Create View
 Used to create a view
-```
+```sql
 CREATE VIEW view_name AS SELECT column1, column2 … FROM table_name WHERE condition;
 ```
 ### Drop View
 Used to delete a view
-```
+```sql
 DROP VIEW view_name;
 ```
 
 ## SQL Tables
 ### Create Table
 Used to create a new table in a database
-```
+```sql
 CREATE TABLE table_name (column1 datatype, column2 datatype, column3 datatype …);
 ```
 ### Insert Into
 Used to insert new records into a table
-```
+```sql
 INSERT INTO table_name (column1, column2, column3 …) VALUES (value1, value2, value3 …);
 ```
 ### Drop Table
 Used to delete an existing table in a database.
-```
+```sql
 DROP TABLE table_name;
 ```
 ### Truncate Table
 Used to delete all the data from a table but not the table itself.
-```
+```sql
 TRUNCATE TABLE table_name;
 ```
 ### ALTER TABLE
 Used to add, delete and modify the columns in an existing table.
 #### Add Column
-```
+```sql
 ALTER TABLE table_name ADD column_name datatype;
 ```
 #### Delete a column from a table
-```
+```sql
 ALTER TABLE table_name DROP COLUMN column_name;
 ```
 #### Rename a column of a table
-```
+```sql
 RENAME COLUMN old_name TO new_name;
 ```
 #### Change the datatype of a column:
-```
+```sql
 ALTER TABLE table_name MODIFY column_name datatype;
 ```
 ### Update Table
 Used to modify or update table records.
-```
+```sql
 UPDATE table_name SET column1 = value1, column2 = value2 … WHERE condition;
 ```
 ### Delete Table
 Used to delete records from a table
-```
+```sql
 DELETE FROM table_name WHERE condition;
 ```
 ## SQL Clauses
