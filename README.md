@@ -310,12 +310,12 @@ SELECT * FROM table_name WHERE column_name IS NOT NULL;
 SQL Indexes are used to speed up search queries in the database tables.
 ### Create Index
 Used to create indexes on the database tables
-```
+```sql
 CREATE INDEX index_name ON table_name (column_name);
 ```
 ### Create Unique Index
 Ensures all values in the indexed column(s) are distinct.
-```
+```sql
 CREATE UNIQUE INDEX index_name ON table_name (column_name);
 ```
 ### Drop Index
@@ -323,19 +323,19 @@ Deletes an index from the database
 [!TIP]
 Syntax can vary depending on the database system.
 #### For SQL Server
-```
+```sql
 DROP INDEX index_name ON table_name;
 ```
 #### For MySQL
-```
+```sql
 DROP INDEX index_name ON table_name;
 ```
 #### For PostgreSQL
-```
+```sql
 DROP INDEX index_name;
 ```
 ### Rename Index
 Optional, where supported
-```
+```sql
 ALTER INDEX old_index_name RENAME TO new_index_name;
 ```
